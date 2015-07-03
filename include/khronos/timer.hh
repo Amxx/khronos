@@ -7,14 +7,14 @@
 
 namespace khronos
 {
-	class Timer
+	class timer
 	{
 		public:
-			using callback_t = std::function<bool(size_t, Timer&)>;
+			using callback_t = std::function<bool(size_t, timer&)>;
 			using duration_t = boost::posix_time::time_duration;
 
 		public:
-			Timer(boost::asio::io_service& io,
+			timer(boost::asio::io_service& io,
 			      const callback_t&        callback = callback_t(),
 			      const duration_t&        duration = boost::posix_time::seconds(1),
 			      bool                     enable   = true)

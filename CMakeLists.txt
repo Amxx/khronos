@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 2.8)
 #                               Compile options                               #
 ###############################################################################
 add_definitions(-g)
-add_definitions(-std=c++11)
+add_definitions(-std=c++14)
 
 ###############################################################################
 #                                Dependencies                                 #
